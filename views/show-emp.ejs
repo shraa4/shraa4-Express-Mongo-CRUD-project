@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow rounded-4 border-4">
+            <div class="card-body">
+                <div class="text-info text-center">
+                    <h2>Detail Info of Employee</h2>
+
+                </div>
+
+                <div class="mb-4">
+                    <strong>First Name: </strong> <%= emp.fname %>
+                    
+
+                </div>
+                 <div class="mb-4">
+                    <strong>Last Name: </strong> <%= emp.lname %>
+                    
+
+                </div>
+                 <div class="mb-4">
+                    <strong>Email: </strong> <%= emp.email %>
+                    
+
+                </div>
+                 <div class="mb-4">
+                    <strong>Phone: </strong> <%= emp.phone %>
+                    
+
+                </div>
+                 <div class="mb-4">
+                    <strong>Address: </strong> <%= emp.address %>
+                    
+
+                </div>
+
+                <div>
+                    <a class="btn btn-secondary" href="/">View All</a>
+                    <a class="btn btn-info" href="/update-emp/<%= emp._id %>">Edit</a>
+                    <a class="btn btn-primary" href="/add-emp">Add</a>
+                    <a class="btn btn-danger" href="/delete-emp/<%= emp._id %>">Delete</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
